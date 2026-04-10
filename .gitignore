@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[codz]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# ML Artifacts
+checkpoints/
+*.pt
+*.pth
+*.onnx
+
+# Data Lake (regenerated)
+lake/
+*.ducklake
+*.parquet
+*.arrow
+
+# Environment
+.env
+.envrc
+.venv/
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# Claude Code
+.claude/
+CLAUDE.md
+.code-review-graph/
+
+# OS
+Thumbs.db
+.DS_Store
