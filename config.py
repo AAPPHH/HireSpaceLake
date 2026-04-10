@@ -42,7 +42,7 @@ EVAL = {
     "recall_k": [1, 5, 10],
 }
 
-ACTIVE_MODEL = MODEL
+ACTIVE_MODEL = HARRIER
 
 SEP_TOKEN = " SEP "
 DATASET_NAME = "0xnbk/resume-ats-score-v1-en"
