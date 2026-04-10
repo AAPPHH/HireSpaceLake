@@ -1,22 +1,28 @@
 [project]
 name = "talentlake"
-version = "0.1.0"
+version = "0.2.0"
 requires-python = ">=3.11"
 dependencies = [
     "torch>=2.0,<3.0",
     "transformers>=4.40",
     "sentence-transformers>=5.4",
-    "peft>=0.10",
-    "bitsandbytes>=0.43",
     "datasets>=2.18",
     "duckdb>=1.2",
     "hdbscan>=0.8.33",
     "numpy>=1.24",
     "streamlit>=1.30",
-    "accelerate>=0.28",
 ]
 
 [project.optional-dependencies]
+gpu = [
+    "peft>=0.10",
+    "bitsandbytes>=0.43",
+    "accelerate>=0.28",
+]
+viz = [
+    "umap-learn>=0.5",
+    "plotly>=5.0",
+]
 dev = ["black", "pytest"]
 
 [tool.black]
